@@ -9,16 +9,17 @@
     <Grid>
         <Label x:Name="nameLabel" Content="Name:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="idLabel" Content="ID:" HorizontalAlignment="Left" Margin="30,41,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="nameTextbox"  HorizontalAlignment="Left" Height="23" Margin="59,14,0,0" TextWrapping="Wrap" Text="Name to search for" VerticalAlignment="Top" Width="120" GotFocus="nameTextbox_GotFocus" LostFocus="nameTextbox_LostFocus"/>
+        <TextBox KeyDown="nameTextbox_OnKeyDown" x:Name="nameTextbox"  HorizontalAlignment="Left" Height="23" Margin="59,14,0,0" TextWrapping="Wrap" Text="Name to search for" VerticalAlignment="Top" Width="120" GotFocus="nameTextbox_GotFocus" LostFocus="nameTextbox_LostFocus"/>
         <TextBox x:Name="idTextbox" HorizontalAlignment="Left" Height="23" Margin="59,45,0,0" TextWrapping="Wrap" Text="ID to search for" VerticalAlignment="Top" Width="120" GotFocus="idTextbox_GotFocus" LostFocus="idTextbox_LostFocus"/>
-        <Button x:Name="nameSendButton" Content="Search" HorizontalAlignment="Left" Margin="184,16,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button KeyDown="idTextbox_OnKeyDown" x:Name="nameSendButton" Content="Search" HorizontalAlignment="Left" Margin="184,16,0,0" VerticalAlignment="Top" Width="75" Click="nameSendButton_OnClicked"/>
         <Button x:Name="idSendButton" Content="Search" HorizontalAlignment="Left" Margin="184,45,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="statusLabel" Content="aaaaa" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Top"/>
 
-        <ScrollViewer>
+        <ScrollViewer Margin="0,85,0,0">
 
-
-            <Label x:Name="resultLabel" Content="Label" HorizontalAlignment="Left" Margin="30,100,0,0" VerticalAlignment="Top"/>
-
+            <Grid>
+                <Label x:Name="resultLabel" Content="" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Top"/>
+            </Grid>
 
 
         </ScrollViewer>
