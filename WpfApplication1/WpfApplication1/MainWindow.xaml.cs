@@ -69,6 +69,7 @@ namespace WpfApplication1
                 resultLabel.Content += a + "\r\n";
             }
 
+
             statusLabel.Content = "";
 
         }
