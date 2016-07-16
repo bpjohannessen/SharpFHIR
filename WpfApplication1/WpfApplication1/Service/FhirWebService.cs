@@ -40,7 +40,11 @@ namespace WpfApplication1.Service
             {
                 var patient = (Patient)entry.Resource;
                 //names.Add(patient.Name.ToString());       
-                names.Add(patient.Name[0].Given.First());
+                names.Add("First name: " + patient.Name[0].Given.First());
+                names.Add("Last name: " + patient.Name[0].Family.First());
+                names.Add("DOB: " + patient.BirthDate);
+                names.Add("DOB FHIR: " + patient.BirthDateElement + "\r\n");
+                
             }
             return names; 
         }

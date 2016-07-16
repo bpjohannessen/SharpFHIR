@@ -33,3 +33,4 @@ C:\code\sharponfhir\SharpFHIR\WpfApplication1\WpfApplication1\obj\Debug\MainWind
 C:\code\sharponfhir\SharpFHIR\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.g.resources
 C:\code\sharponfhir\SharpFHIR\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
 C:\code\sharponfhir\SharpFHIR\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
+C:\code\sharponfhir\SharpFHIR\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache

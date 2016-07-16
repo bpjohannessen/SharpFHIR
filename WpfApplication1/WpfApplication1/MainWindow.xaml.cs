@@ -36,15 +36,24 @@ namespace WpfApplication1
             //}
         }
 
+        /*
+         * Text manipulation when GotFocus or LostFocus
+         */
+
         private void nameTextbox_GotFocus(object sender, RoutedEventArgs e)
         {
-            if (String.Equals(nameTextbox.Text, "Name to search for")) nameTextbox.Text = "";
-
+            if (String.Equals(nameTextbox.Text, "Name to search for"))
+            {
+                nameTextbox.Text = "";
+            }
         }
 
         private void idTextbox_GotFocus(object sender, RoutedEventArgs e)
         {
-            idTextbox.Text = "";
+            if (String.Equals(idTextbox.Text, "ID to search for"))
+            {
+                idTextbox.Text = "";
+            }
         }
 
         private void nameTextbox_LostFocus(object sender, RoutedEventArgs e)
@@ -52,40 +61,56 @@ namespace WpfApplication1
             if (String.IsNullOrWhiteSpace(nameTextbox.Text))
                 nameTextbox.Text = "Name to search for";
         }
+
         private void idTextbox_LostFocus(object sender, RoutedEventArgs e)
         {
             if (String.IsNullOrWhiteSpace(idTextbox.Text))
                 idTextbox.Text = "ID to search for";
         }
 
+        /*
+         * Enables the buttons
+         */
+
         private void nameSendButton_OnClicked(object sender, RoutedEventArgs e)
         {
-            statusLabel.Content = "Searching..";
-
             var names = m_fireService.GetPatients(nameTextbox.Text);
-            resultLabel.Content = "";
+            resultTextbox.Text = "";
             foreach (var a in names)
             {
-                resultLabel.Content += a + "\r\n";
+                resultTextbox.Text += a + "\r\n";
             }
-
-
-            statusLabel.Content = "";
-
         }
 
         private void idSendButton_OnClicked(object sender, RoutedEventArgs e)
         {
+            /* 
+             * Commented 2016-07-15 BP
+             * For searching with ID
+             * Not yet functional
+             */
 
-            statusLabel.Content = "Searching..";
-            var names = m_fireService.GetPatients(nameTextbox.Text);
-            resultLabel.Content = "";
+            //int idTextboxInt;
+            //idTextboxInt = Convert.ToInt32(idTextbox.Text);
+
+            /*
+             *
+             */
+            var names = m_fireService.GetPatients(94);
+            resultTextbox.Text = "";
             foreach (var a in names)
             {
-                resultLabel.Content += a + "\r\n";
+                resultTextbox.Text += a + "\r\n";
             }
-            statusLabel.Content = "";
+            
+            string resultPlaceholder = "This search function is not yet implemented.\r\nYou tried to search for patient ID '" + idTextbox.Text + "'";
+            //resultLabel.Content = resultPlaceholder;
+            resultTextbox.Text = resultPlaceholder;
         }
+
+        /*
+         * Enables Enter => Search
+         */
 
         private void nameTextbox_OnKeyDown(object sender, KeyEventArgs e)
         {
