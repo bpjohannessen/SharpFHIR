@@ -7,7 +7,7 @@ using Hl7.Fhir;
 using Hl7.Fhir.Rest;
 using Hl7.Fhir.Model;
 
-namespace WpfApplication1.Service
+namespace SharpFHIR.Service
 {
     public class FhirWebService : IFhirService
     {

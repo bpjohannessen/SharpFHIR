@@ -12,9 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfApplication1.Service;
+using SharpFHIR.Service;
 
-namespace WpfApplication1
+namespace SharpFHIR
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -96,7 +96,8 @@ namespace WpfApplication1
             /*
              *
              */
-            var names = m_fireService.GetPatients(94);
+            var names = m_fireService.GetPatients("94");
+
             resultTextbox.Text = "";
             foreach (var a in names)
             {

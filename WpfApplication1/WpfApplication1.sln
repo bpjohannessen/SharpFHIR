@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication1", "WpfApplication1\WpfApplication1.csproj", "{BC7C6C9A-B9E2-4111-8D3A-A1084DD23900}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpFHIR", "WpfApplication1\SharpFHIR.csproj", "{BC7C6C9A-B9E2-4111-8D3A-A1084DD23900}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
