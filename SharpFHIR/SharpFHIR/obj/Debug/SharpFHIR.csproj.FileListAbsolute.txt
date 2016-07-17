@@ -16,3 +16,6 @@ C:\code\sharponfhir\SharpFHIR\WpfApplication1\WpfApplication1\obj\Debug\WpfAppli
 C:\code\sharponfhir\SharpFHIR\WpfApplication1\WpfApplication1\obj\Debug\SharpFHIR.csproj.GenerateResource.Cache
 C:\code\sharponfhir\SharpFHIR\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.exe
 C:\code\sharponfhir\SharpFHIR\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb
+C:\code\sharponfhir\SharpFHIR\SharpFHIR\SharpFHIR\bin\Debug\WpfApplication1.exe.config
+C:\code\sharponfhir\SharpFHIR\SharpFHIR\SharpFHIR\obj\Debug\WpfApplication1.exe
+C:\code\sharponfhir\SharpFHIR\SharpFHIR\SharpFHIR\obj\Debug\WpfApplication1.pdb
