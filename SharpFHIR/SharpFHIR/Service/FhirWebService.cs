@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Hl7.Fhir;
 using Hl7.Fhir.Rest;
 using Hl7.Fhir.Model;
+using ObjectDumper;
 
 namespace SharpFHIR.Service
 {
@@ -44,7 +45,11 @@ namespace SharpFHIR.Service
                 names.Add("Last name: " + patient.Name[0].Family.First());
                 names.Add("DOB: " + patient.BirthDate);
                 names.Add("DOB FHIR: " + patient.BirthDateElement + "\r\n");
-                
+
+                //var objDump1 = new ObjectDumper();
+                ObjectDumperExtensions.DumpToString(patient);
+
+
             }
             return names; 
         }

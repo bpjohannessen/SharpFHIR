@@ -13,13 +13,15 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SharpFHIR.Service;
+using MahApps.Metro.Controls;
+using MahApps.Metro.Controls.Dialogs;
 
 namespace SharpFHIR
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : MetroWindow
     {
         private readonly IFhirService m_fireService;
 
@@ -108,6 +110,17 @@ namespace SharpFHIR
             //resultLabel.Content = resultPlaceholder;
             resultTextbox.Text = resultPlaceholder;
         }
+
+        private async void aboutButton_OnClicked(object sender, RoutedEventArgs e)
+        {
+            /*
+             */
+
+            resultTextbox.Text = "Hello from the other side";
+
+            await this.ShowMessageAsync("I'm a fhir and I burn", "Made with careless carelessness by bp\r\nwww.eosinjunkie.com");
+        }
+
 
         /*
          * Enables Enter => Search
