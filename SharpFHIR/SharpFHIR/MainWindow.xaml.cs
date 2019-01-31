@@ -28,7 +28,8 @@ namespace SharpFHIR
 
         public MainWindow()
         {
-            m_fireService = new FhirWebService("http://spark.furore.com/fhir");
+            //m_fireService = new FhirWebService("http://spark.furore.com/fhir");
+            m_fireService = new FhirWebService("https://try.smilecdr.com:8000/");
             InitializeComponent();
             //var names = m_fireService.GetPatients("Donald");
             //resultLabel.Content = "";
@@ -116,7 +117,7 @@ namespace SharpFHIR
             /*
              */
 
-            resultTextbox.Text = "Hello from the other side";
+            //resultTextbox.Text = "Hello from the other side";
 
             await this.ShowMessageAsync("I'm a fhir and I burn", "Made with careless carelessness by bp\r\nwww.eosinjunkie.com");
         }

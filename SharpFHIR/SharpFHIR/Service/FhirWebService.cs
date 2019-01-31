@@ -47,11 +47,12 @@ namespace SharpFHIR.Service
                 names.Add("DOB FHIR: " + patient.BirthDateElement + "\r\n");
 
                 //var objDump1 = new ObjectDumper();
-                ObjectDumperExtensions.DumpToString(patient);
+                //ObjectDumperExtensions.DumpToString(patient);
 
 
             }
-            return names; 
+            return names;
+            
         }
     }
 }
